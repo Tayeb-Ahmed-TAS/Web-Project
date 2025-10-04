@@ -70,6 +70,10 @@ p {
   padding: 20px 80px;
   background: var(--nav_bg);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 #navbar {
@@ -78,10 +82,16 @@ p {
   justify-content: center;
 }
 
+.logo {
+  width: 140px;
+  height: 40px;
+}
+
 #navbar li {
   list-style: none;
   padding: 0 20px;
   position: relative;
+  text-transform: capitalize;
 }
 
 #navbar li a {
@@ -107,4 +117,40 @@ p {
   position: absolute;
   bottom: -2px;
   left: 21px;
+}
+
+/* Hero Section */
+
+#hero {
+  background-image: url("../img/hero4.png");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-text h4 {
+  padding-bottom: 15px;
+}
+
+.hero-text h1 {
+  color: var(--nav_color2);
+}
+
+.hero-text button {
+  background-image: url("../img/button.png");
+  background-color: transparent;
+  color: var(--nav_color2);
+  border: none;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
 }
