@@ -1,7 +1,7 @@
 # Web-Project
 # Created By :
 
-<h1>Tayeb Ahmed<h1>
+<h1>Tayeb Ahmed</h1>
 
 Department of CSE
 
@@ -14,7 +14,7 @@ Bangladesh
   </div>
  <br/><hr/>
 
-<h1>Taskin Tabassum Shorna<h1>
+<h1>Taskin Tabassum Shorna</h1>
 
 Department of CSE
 
