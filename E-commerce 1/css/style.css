@@ -19,6 +19,8 @@ body {
 }
 
 :root {
+  --white: #ffffff;
+  --black: #000000;
   --nav_bg: #e3e6f3;
   --nav_color: #1a1a1a;
   --nav_color2: #088178;
@@ -31,9 +33,10 @@ body {
   --box_bg_4: #cdd4f8;
   --box_bg_5: #f6dbf6;
   --box_bg_6: #fff2e5;
-  --brand_name_color:#606063;
-  --star-color:#f3b519;
-  --product_cart_color:#e8f6ea;
+  --brand_name_color: #606063;
+  --star-color: #f3b519;
+  --product_cart_color: #e8f6ea;
+  --Off_color: #ef3636;
 }
 
 .container {
@@ -75,6 +78,19 @@ p {
 
 .section-m1 {
   padding: 40px 0;
+}
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
 }
 
 /* Nav Start */
@@ -232,13 +248,13 @@ p {
   background: var(--box_bg_6);
 }
 
-/*Product-1 Section*/
+/*Product-1 (Featured Products) Section*/
 
 #product1 {
   text-align: center;
 }
 
-#product1 .pro-container{
+#product1 .pro-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -246,7 +262,7 @@ p {
   padding: 20px;
 }
 
-#product1 p{
+#product1 p {
   text-transform: capitalize;
 }
 
@@ -277,30 +293,30 @@ p {
   padding: 10px 0px;
 }
 
-#product1 .product .description span{
+#product1 .product .description span {
   color: var(--brand_name_color);
   font-size: 13px;
 }
 
-#product1 .product .description h5{
+#product1 .product .description h5 {
   padding-top: 7px;
   color: var(--nav_color);
   font-size: 14px;
 }
 
-#product1 .product .description i{
+#product1 .product .description i {
   font-size: 12px;
   color: var(--star-color);
 }
 
-#product1 .product .description h4{
+#product1 .product .description h4 {
   padding-top: 7px;
   font-size: 15px;
   font-family: 700;
   color: var(--nav_color2);
 }
 
-#product1 .product .product_cart{
+#product1 .product .product_cart {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -313,3 +329,45 @@ p {
   bottom: 20px;
   right: 10px;
 }
+
+/*Call Back (Banner) section*/
+
+#banner {
+  background-image: url("../img/banner/b2.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+#banner,
+#banner .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#banner h4 {
+  color: var(--white);
+  font-size: 16px;
+}
+
+#banner h2 {
+  color: var(--white);
+  font-size: 30px;
+  padding: 10px 0px;
+}
+
+#banner h2 span {
+  color: var(--Off_color);
+}
+
+#banner button:hover {
+  background-color: var(--nav_color2);
+  color: var(--white);
+}
+
+/*Product-2 (New Arrival) Section*/
