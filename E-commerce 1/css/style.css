@@ -26,6 +26,7 @@ body {
   --nav_color2: #088178;
   --h_color: #222;
   --p_color: #465b52;
+  --p_color_2: #818ea0;
   --border_color: #cce7d0;
   --box_bg_1: #fddde4;
   --box_bg_2: #cdebbc;
@@ -37,6 +38,11 @@ body {
   --star-color: #f3b519;
   --product_cart_color: #e8f6ea;
   --Off_color: #ef3636;
+  --transparent_color: transparent;
+  --red1: #ec544e;
+  --newsletter_bg: #041e42;
+  --brown_color:#a52a2a;
+  --span_color:#ffbd27;
 }
 
 .container {
@@ -77,7 +83,7 @@ p {
 }
 
 .section-m1 {
-  padding: 40px 0;
+  margin: 40px 0;
 }
 
 button.normal {
@@ -89,6 +95,18 @@ button.normal {
   border-radius: 4px;
   cursor: pointer;
   border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+button.normal_2 {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 30px;
+  color: var(--white);
+  background-color: var(--transparent_color);
+  cursor: pointer;
+  border: 1px solid var(--white);
   outline: none;
   transition: 0.2s;
 }
@@ -370,4 +388,156 @@ button.normal {
   color: var(--white);
 }
 
-/* 5 Banners (sm-banner) Section */
+/* 2 Banners (sm-banner) Section */
+
+#sm-banner .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("../img/banner/b17.jpg");
+  min-width: 580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+#sm-banner .banner-box:nth-child(2) {
+  background-image: url("../img/banner/b10.jpg");
+}
+
+#sm-banner .banner-box h4 {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#sm-banner .banner-box h2 {
+  color: var(--white);
+  font-size: 28px;
+  font-weight: 800;
+}
+
+#sm-banner .banner-box span {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button {
+  background-color: var(--nav_color2);
+  border: 1px solid var(--nav_color2);
+}
+
+/* 3 Banner (sm-banner-3) Section */
+
+#sm-banner-3 .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* padding: 0 80px; */
+}
+
+#sm-banner-3 .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("../img/banner/b7.jpg");
+  min-width: 32.5%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#sm-banner-3 .banner-box:nth-child(2) {
+  background-image: url("../img/banner/b4.jpg");
+}
+
+#sm-banner-3 .banner-box:nth-child(3) {
+  background-image: url("../img/banner/b18.jpg");
+}
+
+#sm-banner-3 .banner-box h2 {
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#sm-banner-3 .banner-box h3 {
+  color: var(--brown_color);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* Newsletter Section */
+
+#newsletter {
+  background-image: url("../img/banner/b14.png");
+  background-color: var(--newsletter_bg);
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+}
+
+#newsletter .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#newsletter .newsText h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+#newsletter .newsText p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--p_color_2);
+}
+
+#newsletter .newsText p span {
+  color: var(--span_color);
+}
+
+#newsletter .news_form{
+  width: 40%;
+}
+
+#newsletter .news_form form{
+  display: flex;
+  width: 100%;
+}
+
+#newsletter .news_form input[type="email"]{
+  height: 3.125rem;
+  padding: 0 1.25rem;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid var(--transparent_color);
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#newsletter .news_form button{
+  background: var(--nav_color2);
+  color: var(--white);
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
