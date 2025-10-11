@@ -41,8 +41,12 @@ body {
   --transparent_color: transparent;
   --red1: #ec544e;
   --newsletter_bg: #041e42;
-  --brown_color:#a52a2a;
-  --span_color:#ffbd27;
+  --brown_color: #a52a2a;
+  --span_color: #ffbd27;
+}
+
+section{
+  width: 100%;
 }
 
 .container {
@@ -110,3 +114,21 @@ button.normal_2 {
   outline: none;
   transition: 0.2s;
 }
+
+a {
+  text-decoration: none;
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+    .container {
+      width: 85%;
+    }
+  }
+
+@media (max-width: 750px) {
+    .container {
+      width: 100%;
+    }
+  }
