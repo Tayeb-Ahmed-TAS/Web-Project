@@ -1,173 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-/* font-family: "Poppins", sans-serif; */
-/* font-family: "Roboto", sans-serif; */
-/* font-family: "Spartan", sans-serif; */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Spartan", sans-serif;
-  scroll-behavior: smooth;
-}
-
-body {
-  width: 100%;
-}
-
-:root {
-  --white: #ffffff;
-  --black: #000000;
-  --nav_bg: #e3e6f3;
-  --nav_color: #1a1a1a;
-  --nav_color2: #088178;
-  --h_color: #222;
-  --p_color: #465b52;
-  --p_color_2: #818ea0;
-  --border_color: #cce7d0;
-  --box_bg_1: #fddde4;
-  --box_bg_2: #cdebbc;
-  --box_bg_3: #d1e8f2;
-  --box_bg_4: #cdd4f8;
-  --box_bg_5: #f6dbf6;
-  --box_bg_6: #fff2e5;
-  --brand_name_color: #606063;
-  --star-color: #f3b519;
-  --product_cart_color: #e8f6ea;
-  --Off_color: #ef3636;
-  --transparent_color: transparent;
-  --red1: #ec544e;
-  --newsletter_bg: #041e42;
-  --brown_color:#a52a2a;
-  --span_color:#ffbd27;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 50px;
-  line-height: 64px;
-  color: var(--h_color);
-}
-
-h2 {
-  font-size: 46px;
-  line-height: 54px;
-  color: var(--h_color);
-}
-
-h4 {
-  font-size: 20px;
-  color: var(--h_color);
-}
-
-h6 {
-  font-weight: 700;
-  font-size: 12px;
-}
-
-p {
-  font-size: 16px;
-  color: var(--p_color);
-  margin: 15px 0 20px 0;
-}
-
-.section-p1 {
-  padding: 40px 80px;
-}
-
-.section-m1 {
-  margin: 40px 0;
-}
-
-button.normal {
-  font-size: 14px;
-  font-weight: 600;
-  padding: 15px 30px;
-  color: var(--black);
-  background-color: var(--white);
-  border-radius: 4px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  transition: 0.2s;
-}
-
-button.normal_2 {
-  font-size: 13px;
-  font-weight: 600;
-  padding: 11px 30px;
-  color: var(--white);
-  background-color: var(--transparent_color);
-  cursor: pointer;
-  border: 1px solid var(--white);
-  outline: none;
-  transition: 0.2s;
-}
-
-/* Nav Start */
-
-#navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 80px;
-  background: var(--nav_bg);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-  z-index: 999;
-  position: sticky;
-  top: 0;
-  left: 0;
-}
-
-#navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo {
-  width: 140px;
-  height: 40px;
-}
-
-#navbar li {
-  list-style: none;
-  padding: 0 20px;
-  position: relative;
-  text-transform: capitalize;
-}
-
-#navbar li a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--nav_color);
-  transition: 0.3s ease;
-}
-
-#navbar li a:hover,
-#navbar li a.active {
-  color: var(--nav_color2);
-}
-
-#navbar li a.active::after,
-#navbar li a:hover::after {
-  content: "";
-  width: 30%;
-  height: 2px;
-  background: var(--nav_color2);
-  position: absolute;
-  bottom: -2px;
-  left: 21px;
-}
-
 /* Hero Section */
 
 #hero {
@@ -513,16 +343,16 @@ button.normal_2 {
   color: var(--span_color);
 }
 
-#newsletter .news_form{
+#newsletter .news_form {
   width: 40%;
 }
 
-#newsletter .news_form form{
+#newsletter .news_form form {
   display: flex;
   width: 100%;
 }
 
-#newsletter .news_form input[type="email"]{
+#newsletter .news_form input[type="email"] {
   height: 3.125rem;
   padding: 0 1.25rem;
   font-size: 14px;
@@ -534,7 +364,7 @@ button.normal_2 {
   border-bottom-right-radius: 0;
 }
 
-#newsletter .news_form button{
+#newsletter .news_form button {
   background: var(--nav_color2);
   color: var(--white);
   white-space: nowrap;
