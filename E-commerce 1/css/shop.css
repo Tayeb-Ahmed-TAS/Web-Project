@@ -19,20 +19,3 @@
     color: var(--white);
     text-align: center;
 }
-
-#pagination {
-    text-align: center;
-}
-
-#pagination a {
-    color: var(--white);
-    background-color: var(--nav_color2);
-    padding: 15px 20px;
-    border-radius: 4px;
-    font-weight: 600;
-}
-
-#pagination a i {
-    font-size: 16px;
-    font-weight: 600;
-}
