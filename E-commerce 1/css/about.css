@@ -1,0 +1,91 @@
+/** About Page Styles */
+
+#page-header.about-header {
+    background-image: url("../img/about/banner.png");
+}
+
+#about-head .container {
+    display: flex;
+    align-items: center;
+
+}
+
+#about-head img {
+    width: 50%;
+    height: auto;
+}
+
+#about-head div {
+    padding-left: 40px;
+}
+
+#about-head div p {
+    text-align: justify;
+    line-height: 24px;
+}
+
+#about-head .container span {
+    text-decoration: dotted underline;
+    font-weight: 500;
+    text-align: left !important;
+}
+
+#about-head marquee {
+    background-color: var(--gray);
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Video */
+
+#about-app {
+    text-align: center;
+}
+
+#about-app h1 a {
+    color: var(--nav_color2);
+}
+
+#about-app .video {
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0px auto;
+}
+
+#about-app .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Responsive Styles */
+
+@media (max-width:799px) {
+
+    #about-head .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    #about-head img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    #about-head div {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    #about-app .video {
+        width: 85%;
+    }
+}
+
+@media (max-width:477px) {
+
+    #about-app .video {
+        width: 100%;
+    }
+}
