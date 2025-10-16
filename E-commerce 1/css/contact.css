@@ -118,11 +118,10 @@
 }
 
 #form-details .people div p span {
-  display: block;
+  /* display: block; */
   font-size: 16px;
   font-weight: 600;
   color: var(--black);
-  /* line-height: 0; */
 }
 
 /* Responsive Styles */
