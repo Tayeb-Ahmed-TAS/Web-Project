@@ -1,0 +1,219 @@
+/* Sign In Page Styles */
+
+#account .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.account_form {
+    width: 55%;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+form {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.account_form form label {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.account_form input,
+.account_form button {
+    width: 100% !important;
+}
+
+.account_form input {
+    margin: 10px 0;
+    padding: 12px 0px 12px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid var(--gray);
+    border-radius: 4px;
+    outline: none;
+
+}
+
+.account_form input:focus {
+    outline: none;
+    border-color: var(--nav_color2);
+}
+
+.account_form i {
+    position: absolute;
+    color: var(--gray);
+    left: 10px;
+    font-size: 21px;
+}
+
+.account_form input:focus .account_form i {
+    color: var(--nav_color2) !important;
+}
+
+.account_form .fa-envelope {
+    top: 42px;
+}
+
+.account_form .fa-lock {
+    top: 127px;
+}
+
+.account_form .pass_s_h {
+    top: 127px;
+    right: 10px !important;
+    left: auto !important;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.account_form .pass_s_h:hover {
+    color: var(--nav_color2) !important;
+}
+
+.sign_in_btn {
+    margin-top: 20px;
+    background: var(--nav_color2) !important;
+    color: var(--white) !important;
+}
+
+.forgot_pass {
+    display: block;
+    margin-top: 10px;
+    color: var(--nav_color2);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.or {
+    text-align: center;
+    margin: 30px 0;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.or::before,
+.or::after {
+    content: "";
+    display: inline-block;
+    width: 40%;
+    height: 1px;
+    background: var(--gray);
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.google_btn,
+.apple_btn {
+    width: 100% !important;
+    margin-bottom: 15px;
+    padding: 12px 0;
+    border: 2px solid var(--gray) !important;
+    border-radius: 4px;
+    font-size: 16px;
+    background: var(--white) !important;
+    color: var(--black) !important;
+    cursor: pointer;
+}
+
+.google_btn img,
+.apple_btn img {
+    width: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.create_account {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.create_account a {
+    color: var(--nav_color2);
+    font-weight: 700;
+}
+
+.bg_quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 45%;
+    height: 100%;
+    padding: 40px;
+    background: linear-gradient(135deg, #0b3c4d 0%, #155e75 100%);
+}
+
+.bg_quote h2,
+.bg_quote p,
+.bg_quote span {
+    color: var(--white) !important;
+    font-family: 'poppins', sans-serif;
+}
+
+.bg_quote P span {
+    font-weight: 700;
+}
+
+.bg_quote .last_span {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 120px;
+}
+
+.bg_quote .last_span::after {
+    content: "";
+    display: inline-block;
+    width: 60%;
+    height: 0.5px;
+    background: var(--white);
+    vertical-align: middle;
+    margin: 0px 0px 0px 20px;
+}
+
+.bg_quote h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 799px) {
+    #account .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .account_form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .bg_quote {
+        display: none;
+    }
+}
+
+@media (max-width: 477px) {
+    .account_form {
+        padding: 15px;
+    }
+
+    .account_form h2 {
+        font-size: 28px;
+    }
+}
