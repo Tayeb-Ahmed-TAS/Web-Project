@@ -1,0 +1,73 @@
+/*Register Page Styles*/
+
+#account.register_section .container {
+    background-image: linear-gradient(-60deg, #13547a 0%, #80d0c7 100%);
+}
+
+.bg_quote strong {
+    color: var(--brand_name_color);
+}
+
+#account .container .account_form h2 span {
+    color: var(--nav_color2);
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+}
+
+.account_form .fa-user {
+    top: 42px;
+}
+
+.account_form .fa-envelope {
+    top: 127px;
+}
+
+.account_form .fa-lock {
+    top: 212px;
+}
+
+.account_form .pass_s_h {
+    top: 212px;
+}
+
+.account_form .fa-lock.conPassIcon {
+    top: 297px;
+}
+
+.account_form .pass_s_h.conPassIcon {
+    top: 297px;
+}
+
+.dont_match {
+    color: var(--red);
+    font-weight: 600;
+    display: none;
+}
+
+.show_dont_match {
+    display: block;
+}
+
+.red_border {
+    border: 2px solid var(--red) !important;
+}
+
+.check_box_label {
+    cursor: pointer;
+}
+
+.account_form input[type="checkbox"] {
+    width: auto !important;
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: var(--nav_color2);
+}
+
+.check_box_label a {
+    color: var(--nav_color2);
+}
+
+.sign_up_btn[disabled] {
+    background-color: var(--gray) !important;
+    cursor: not-allowed;
+}
