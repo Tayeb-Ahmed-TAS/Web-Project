@@ -39,7 +39,7 @@
 }
 
 .dont_match {
-    color: var(--red);
+    color: var(--red2);
     font-weight: 600;
     display: none;
 }
@@ -49,7 +49,7 @@
 }
 
 .red_border {
-    border: 2px solid var(--red) !important;
+    border: 2px solid var(--red2) !important;
 }
 
 .check_box_label {
