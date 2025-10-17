@@ -6,6 +6,7 @@
 
 .bg_quote strong {
     color: var(--brand_name_color);
+    line-height: 28px;
 }
 
 #account .container .account_form h2 span {
