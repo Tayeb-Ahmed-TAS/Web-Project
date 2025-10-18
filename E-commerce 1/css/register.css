@@ -72,3 +72,9 @@
     background-color: var(--gray) !important;
     cursor: not-allowed;
 }
+
+@media (max-width: 1078px) {
+    #account .container {
+        background-image: none !important;
+    }
+}
