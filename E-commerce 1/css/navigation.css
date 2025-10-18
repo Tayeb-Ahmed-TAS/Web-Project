@@ -41,12 +41,14 @@
 }
 
 #navbar li a:hover,
-#navbar li a.active {
-  color: var(--nav_color2);
+#navbar li a.active,
+#mobile a.active i {
+  color: var(--nav_color2) !important;
 }
 
 #navbar li a.active::after,
-#navbar li a:hover::after {
+#navbar li a:hover::after,
+#mobile a.active::after {
   content: "";
   width: 30%;
   height: 2px;
@@ -56,9 +58,14 @@
   left: 21px;
 }
 
+#mobile a.active::after{
+  bottom: -5px;
+}
+
 #mobile {
   display: none;
   align-items: center;
+  position: relative;
 }
 
 .nav_open {

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UrbanNest | A hub for modern urban clothing</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css" />
+    <link rel="stylesheet" href="css/preloader.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/shop.css" />
+    <!-- <link rel="stylesheet" href="css/about.css" /> -->
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+
+    <link rel="shortcut icon" href="img/logo1 (3).png" type="image/x-icon">
+</head>
+
+<body>
+
+    <section id="pre-loader">
+        <div class="spinnerContainer">
+            <div class="spinner"></div>
+            <div class="loader">
+                <p>loading</p>
+                <div class="words">
+                    <span class="word">products</span>
+                    <span class="word">images</span>
+                    <span class="word">prices</span>
+                    <span class="word">hashtags</span>
+                    <span class="word">reviews</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav id="navigation">
+        <a href="index.html"><img src="img/logo1 (1).png" class="logo" alt=""></a>
+
+        <div class="nav">
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sign in.html">Account</a></li>
+                <li class="bag_icon"><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <section id="page-header" class="contact-header">
+        <div class="container">
+            <div class="hero-text">
+                <h2>#cart</h2>
+                <p>Add your coupon & SAVE upto 70% !</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>remove</th>
+                        <th>Image</th>
+                        <th>product</th>
+                        <th>price</th>
+                        <th>quantity</th>
+                        <th>subtotal</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><i class="fas fa-trash-alt"></i></td>
+                        <td><img src="img/products/f1.jpg" alt=""></td>
+                        <td>Cartoon Astronaut T-Shirt</td>
+                        <td class="unitPrice">139.00</td>
+                        <td class="qInp"><input type="number" value="1" min="1"></td>
+                        <td class="subTotal">$139.00</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-trash-alt"></i></td>
+                        <td><img src="img/products/f7.jpg" alt=""></td>
+                        <td>Cartoon Astronaut T-Shirt</td>
+                        <td class="unitPrice">139.00</td>
+                        <td class="qInp"><input type="number" value="1" min="1"></td>
+                        <td class="subTotal">139.00</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-trash-alt"></i></td>
+                        <td><img src="img/products/n4.jpg" alt=""></td>
+                        <td>Cartoon Astronaut T-Shirt</td>
+                        <td class="unitPrice">$139.00</td>
+                        <td class="qInp"><input type="number" value="1" min="1"></td>
+                        <td class="subTotal">139.00</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-trash-alt"></i></td>
+                        <td><img src="img/products/f6.jpg" alt=""></td>
+                        <td>Cartoon Astronaut T-Shirt</td>
+                        <td class="unitPrice">$139.00</td>
+                        <td class="qInp"><input type="number" value="1" min="1"></td>
+                        <td class="subTotal">$139.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div class="container">
+            <div id="coupon">
+                <h3>Coupon Code</h3>
+
+                <div>
+                    <input type="text" placeholder="Enter Your Coupon" required />
+                    <button class="normal coupon_apply_btn">Apply</button>
+                </div>
+
+                <p class="inv_cpn">Invalid Coupon !</p>
+
+            </div>
+
+            <div id="sub_total">
+                <h3>Cart Total</h3>
+
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td id="cartSubtotal">$139.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Shipping</td>
+                        <td id="shipping_fee">Free</td>
+                    </tr>
+
+                    <tr>
+                        <td>Discount</td>
+                        <td id="discount">0</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td id="cartTotalPrice"><strong>$139.00</strong></td>
+                    </tr>
+                </table>
+
+                <button class="normal">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="section-p1">
+        <div class="container">
+            <div class="footer_col">
+                <img src="img/logo1 (1).png" alt="" class="logo f_logo" />
+                <h4>Contact</h4>
+                <p><strong>Address: </strong>562 Wellington Road, Street 32, San Francisco</p>
+                <p><strong>Phone: </strong>01111111111 / 01222222222</p>
+                <p><strong>Hours: </strong>10:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="follow_icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="footer_col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="cart.html">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="footer_col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+
+                <div class="row">
+                    <img src="img/pay/app.jpg" alt="" />
+                    <img src="img/pay/play.jpg" alt="" />
+                </div>
+
+                <p>Secured Payment Gateway</p>
+                <img src="img/pay/pay.png" alt="" />
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025, All rights are reserved by <span> Code Surgeons</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/preloader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
