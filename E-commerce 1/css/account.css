@@ -216,3 +216,11 @@ form {
         font-size: 28px;
     }
 }
+
+@media(max-width:378px) {
+
+    .or::before,
+    .or::after {
+        width: 30%;
+    }
+}
