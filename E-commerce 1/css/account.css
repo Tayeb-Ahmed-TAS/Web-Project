@@ -191,19 +191,27 @@ form {
 
 /* Responsive Styles */
 
-@media (max-width: 799px) {
+@media (max-width: 1078px) {
     #account .container {
         flex-direction: column;
         height: auto;
+        background: var(--white);
     }
 
     .account_form {
-        width: 100%;
+        width: 80%;
         padding: 20px;
     }
 
     .bg_quote {
         display: none;
+    }
+}
+
+@media (max-width: 799px) {
+
+    .account_form {
+        width: 100%;
     }
 }
 
