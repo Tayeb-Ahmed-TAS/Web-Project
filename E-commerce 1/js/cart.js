@@ -99,7 +99,7 @@ coupon_btn.addEventListener("click", function () {
       (
         total_price + parseFloat(shipping_fee.innerText.replace("$", ""))
       ).toFixed(2);
-    discount_field.innerText = `$${inti_shipping_fee.toFixed(2)}`;
+    discount_field.innerText = `-$${inti_shipping_fee.toFixed(2)}`;
     invalid_coupon_msg.classList.remove("cpn_invalid");
   } else {
     invalid_coupon_msg.classList.add("cpn_invalid");
