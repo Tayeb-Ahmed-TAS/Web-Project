@@ -81,6 +81,7 @@ coupon_btn.addEventListener("click", function () {
   let total_price = parseFloat(total_proceed_price.innerText.replace("$", ""));
   let coupon_index = couponcode.indexOf(coupon_code);
   if (coupon_index !== -1 && coupon_index !== couponcode.length - 1) {
+    resetCartPrices();
     let discount_rate = applied_coupons[coupon_index];
     let discount_amount = total_price * discount_rate;
     let new_total_price = total_price - discount_amount;
@@ -97,6 +98,7 @@ coupon_btn.addEventListener("click", function () {
       shipping_fee.innerText = "$" + inti_shipping_fee.toFixed(2);
     }
   } else if (coupon_code === couponcode[couponcode.length - 1]) {
+    resetCartPrices();
     shipping_fee.innerText = "$0.00";
     final_total_price.innerText =
       "$" +
@@ -106,20 +108,21 @@ coupon_btn.addEventListener("click", function () {
     discount_field.innerText = `-$${inti_shipping_fee.toFixed(2)}`;
     invalid_coupon_msg.classList.remove("cpn_invalid");
   } else {
-    invalid_coupon_msg.classList.add("cpn_invalid");
+    if (coupon_input.value != "") {
+      invalid_coupon_msg.classList.add("cpn_invalid");
 
-    // Reset discount and shipping fee if coupon invalid and was applied before
-    discount_field.innerText = "$0.00";
-    shipping_fee.innerText = "$" + inti_shipping_fee.toFixed(2);
-    final_total_price.innerText =
-      "$" +
-      (
-        total_price + parseFloat(shipping_fee.innerText.replace("$", ""))
-      ).toFixed(2);
+      resetCartPrices();
+    }
   }
 
   coupon_input.value = "";
 });
+
+function resetCartPrices() {
+  discount_field.innerText = "0";
+  shipping_fee.innerText = "$" + inti_shipping_fee.toFixed(2);
+  updateTotalPrice();
+}
 
 // Quantity increase and decrease functionality
 
