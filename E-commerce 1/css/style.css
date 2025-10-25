@@ -396,14 +396,14 @@
 
   #sm-banner .banner-box {
     min-width: 85%;
-    height: 30vh;
+    height: 45vh;
     background-position: top;
     margin-bottom: 20px;
   }
 
   #sm-banner-3 .banner-box {
     min-width: 48%;
-    height: 30vh;
+    height: 43vh;
     background-position: top;
     margin-bottom: 20px;
   }
@@ -462,6 +462,7 @@
 
   #sm-banner-3 .banner-box {
     width: 28%;
+    height: 30vh;
   }
 
   #newsletter .news_form {
