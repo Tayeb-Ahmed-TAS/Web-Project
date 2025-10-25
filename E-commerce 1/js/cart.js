@@ -149,3 +149,11 @@ for (inc of increaseBtn) {
     inputField.dispatchEvent(new Event("change"));
   });
 }
+
+// Triger with enter key for coupon input
+
+coupon_input.addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    coupon_btn.click();
+  }
+});
