@@ -88,6 +88,33 @@
     line-height: 25px;
 }
 
+.quantity-controls {
+    margin: 15px 0;
+}
+
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    background-color: var(--border_color) !important;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--nav_color2) !important;
+    padding: 7px 7px;
+    border-radius: 5px;
+}
+
+.quantity-controls input[type="number"] {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid var(--border_color);
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
 /* Responsive */
 
 @media (max-width:477px) {

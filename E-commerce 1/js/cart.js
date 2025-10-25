@@ -107,7 +107,42 @@ coupon_btn.addEventListener("click", function () {
     invalid_coupon_msg.classList.remove("cpn_invalid");
   } else {
     invalid_coupon_msg.classList.add("cpn_invalid");
+
+    // Reset discount and shipping fee if coupon invalid and was applied before
+    discount_field.innerText = "$0.00";
+    shipping_fee.innerText = "$" + inti_shipping_fee.toFixed(2);
+    final_total_price.innerText =
+      "$" +
+      (
+        total_price + parseFloat(shipping_fee.innerText.replace("$", ""))
+      ).toFixed(2);
   }
 
   coupon_input.value = "";
 });
+
+// Quantity increase and decrease functionality
+
+const decreaseBtn = document.querySelectorAll("#decrease-btn");
+const increaseBtn = document.querySelectorAll("#increase-btn");
+const quantityInput = document.querySelectorAll(".quantity-controls input");
+
+for (dec of decreaseBtn) {
+  dec.addEventListener("click", (e) => {
+    let inputField = e.target.nextElementSibling;
+    let currentValue = parseInt(inputField.value);
+    if (currentValue > 1) {
+      inputField.value = currentValue - 1;
+      inputField.dispatchEvent(new Event("change"));
+    }
+  });
+}
+
+for (inc of increaseBtn) {
+  inc.addEventListener("click", (e) => {
+    let inputField = e.target.previousElementSibling;
+    let currentValue = parseInt(inputField.value);
+    inputField.value = currentValue + 1;
+    inputField.dispatchEvent(new Event("change"));
+  });
+}

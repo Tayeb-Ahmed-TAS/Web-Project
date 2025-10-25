@@ -95,7 +95,11 @@
                 <option>Small</option>
             </select>
 
-            <input type="number" value="1" min="1" />
+            <div class="quantity-controls">
+                <button class="quantity-btn" id="decrease-btn">-</button>
+                <input type="number" value="1" min="1" readonly />
+                <button class="quantity-btn" id="increase-btn">+</button>
+            </div>
 
             <button class="normal">Add to Cart</button>
 

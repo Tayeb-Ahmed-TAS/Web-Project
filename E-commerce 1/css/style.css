@@ -407,16 +407,6 @@
     background-position: top;
     margin-bottom: 20px;
   }
-
-  .container {
-    width: 90%;
-  }
-}
-
-@media (max-width:875px) {
-  #navbar li {
-    padding: 0 150px;
-  }
 }
 
 @media (max-width: 799px) {

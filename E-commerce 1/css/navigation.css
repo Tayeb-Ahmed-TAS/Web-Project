@@ -58,7 +58,7 @@
   left: 21px;
 }
 
-#mobile a.active::after{
+#mobile a.active::after {
   bottom: -5px;
 }
 
@@ -73,6 +73,12 @@
 }
 
 /* Responsve */
+
+@media (max-width:875px) {
+  #navbar li {
+    padding: 0 15px;
+  }
+}
 
 @media (max-width: 799px) {
   #navbar {

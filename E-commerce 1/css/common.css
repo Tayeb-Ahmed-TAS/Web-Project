@@ -139,7 +139,7 @@ a {
 
 /* Responsive */
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .container {
     width: 90%;
   }

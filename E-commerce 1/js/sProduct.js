@@ -24,3 +24,20 @@ mainImg.addEventListener("mouseout", function () {
   mainImg.classList.remove("zoomed");
   mainImg.style.transformOrigin = `center center`;
 });
+
+// Quantity increase and decrease functionality
+const decreaseBtn = document.getElementById("decrease-btn");
+const increaseBtn = document.getElementById("increase-btn");
+const quantityInput = document.querySelector(".quantity-controls input");
+
+decreaseBtn.addEventListener("click", () => {
+  let currentValue = parseInt(quantityInput.value);
+  if (currentValue > 1) {
+    quantityInput.value = currentValue - 1;
+  }
+});
+
+increaseBtn.addEventListener("click", () => {
+  let currentValue = parseInt(quantityInput.value);
+  quantityInput.value = currentValue + 1;
+});
