@@ -54,6 +54,10 @@ body {
   width: 8px;
 }
 
+::-webkit-scrollbar-track {
+  background: var(--nav_bg);
+}
+
 ::-webkit-scrollbar-thumb {
   background: var(--nav_color2);
   border-radius: 10px;
