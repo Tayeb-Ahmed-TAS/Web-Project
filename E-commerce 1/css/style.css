@@ -376,6 +376,43 @@
 
 /* Responsive */
 
+@media (max-width:1350px) {
+  #sm-banner.section-p1 {
+    padding: 40px 0px;
+  }
+}
+
+@media (max-width:1300px) {
+
+  /* section,
+  nav,
+  footer {
+    width: 95%;
+  } */
+
+  #sm-banner .container {
+    justify-content: center;
+  }
+
+  #sm-banner .banner-box {
+    min-width: 85%;
+    height: 30vh;
+    background-position: top;
+    margin-bottom: 20px;
+  }
+
+  #sm-banner-3 .banner-box {
+    min-width: 48%;
+    height: 30vh;
+    background-position: top;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
+
 @media (max-width: 799px) {
   #hero {
     height: 70vh;
@@ -405,6 +442,11 @@
 
   #banner {
     height: 20vh;
+  }
+
+
+  #sm-banner.section-p1 {
+    padding: 40px 40px;
   }
 
   #sm-banner .banner-box {
@@ -456,6 +498,10 @@
 
   #banner {
     height: 40vh;
+  }
+
+  #sm-banner.section-p1 {
+    padding: 20px;
   }
 
   #sm-banner .banner-box {
