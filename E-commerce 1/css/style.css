@@ -413,10 +413,10 @@
   }
 }
 
-@media (max-width:875px){
+@media (max-width:875px) {
   #navbar li {
     padding: 0 15px;
-}
+  }
 }
 
 @media (max-width: 799px) {
