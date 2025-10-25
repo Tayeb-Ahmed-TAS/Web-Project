@@ -92,6 +92,10 @@ coupon_btn.addEventListener("click", function () {
       ).toFixed(2);
 
     invalid_coupon_msg.classList.remove("cpn_invalid");
+
+    if (shipping_fee.innerText === "$0.00") {
+      shipping_fee.innerText = "$" + inti_shipping_fee.toFixed(2);
+    }
   } else if (coupon_code === couponcode[couponcode.length - 1]) {
     shipping_fee.innerText = "$0.00";
     final_total_price.innerText =
@@ -104,4 +108,6 @@ coupon_btn.addEventListener("click", function () {
   } else {
     invalid_coupon_msg.classList.add("cpn_invalid");
   }
+
+  coupon_input.value = "";
 });
