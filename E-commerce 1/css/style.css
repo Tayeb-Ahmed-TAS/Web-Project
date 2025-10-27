@@ -372,23 +372,24 @@
   border-bottom-left-radius: 0;
 }
 
-
-
 /* Responsive */
 
-@media (max-width:1350px) {
+@media (max-width: 1350px) {
   #sm-banner.section-p1 {
     padding: 40px 0px;
   }
 }
 
-@media (max-width:1300px) {
-
+@media (max-width: 1300px) {
   /* section,
   nav,
   footer {
     width: 95%;
   } */
+
+  #product1 .pro-container {
+    justify-content: space-evenly;
+  }
 
   #sm-banner .container {
     justify-content: center;
@@ -439,7 +440,6 @@
   #banner {
     height: 20vh;
   }
-
 
   #sm-banner.section-p1 {
     padding: 40px 40px;
