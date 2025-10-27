@@ -388,7 +388,23 @@
   } */
 
   #product1 .pro-container {
-    justify-content: space-evenly;
+    width: 90% !important;
+    margin: auto auto;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  #product1 .product {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid var(--border_color);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0px;
+    transition: 0.2s ease;
+    position: relative;
   }
 
   #sm-banner .container {
@@ -407,6 +423,51 @@
     height: 43vh;
     background-position: top;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1184px) {
+
+  #product1 .pro-container {
+    width: 95% !important;
+  }
+}
+
+@media (max-width: 1130px) {
+
+  #product1 .pro-container {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1082px) {
+
+  #product1 .product {
+    min-width: 235px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1032px) {
+  /* 
+  #product1 .pro-container {
+    justify-content: space-around;
+  } */
+
+  #product1 .product {
+    min-width: 220px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 982px) {
+
+  #product1 .pro-container {
+    justify-content: space-around;
+  }
+
+  #product1 .product {
+    min-width: 250px;
   }
 }
 
